@@ -47,7 +47,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableZoom = false;
 controls.enablePan = false;
 
-controls.rotateSpeed = 0.3;
+controls.rotateSpeed = -0.3;
 
 function onWindowResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
