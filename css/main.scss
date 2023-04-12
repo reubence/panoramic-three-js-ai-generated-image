@@ -1,0 +1,36 @@
+
+.overlay {
+    position: absolute;
+    bottom: 1em;
+    padding: 3em;
+    font-family: 'Bebas Neue';
+    pointer-events: none;
+    color: white;
+
+    h1 {
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-size: .9rem;
+        margin: 0;
+        width: 50%;
+    }
+}
+
+#container::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 52%);
+    z-index: 0;
+    pointer-events: none;
+}
+.inner {
+    position: relative;
+    z-index: 10;
+    pointer-events: none;
+}
